@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Art Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #222;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    section {
+      margin: 2rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Art Portfolio</h1>
+    <p>Welcome to my collection of artworks</p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm an artist passionate about illustration and visual storytelling. This is a selection of my work. Enjoy browsing!</p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="gallery">
+        <img src="images/art1.jpg" alt="Artwork 1">
+        <img src="images/art2.jpg" alt="Artwork 2">
+        <img src="images/art3.jpg" alt="Artwork 3">
+        <img src="images/art4.jpg" alt="Artwork 4">
+      </div>
+      <p style="margin-top:1rem;">To add more works, just place new images in the <code>images</code> folder and update this section with <code>&lt;img&gt;</code> tags.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to reach me, send an email to: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Art Portfolio</p>
+  </footer>
+</body>
+</html>
